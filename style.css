@@ -64,41 +64,41 @@ li {
 
 .whyus,
 .subscription {
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 .money__back {
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 h1 {
   color: var(--Cyan);
   font-family: var(--ff-karla);
   font-weight: 700;
-  font-size: 25px;
-  margin-top: 10px;
+  font-size: 1.5625rem;
+  margin-top: 0.625rem;
 }
 
 .money__back > h3 {
   color: var(--BrightYellow);
-  margin-top: 20px;
+  margin-top: 1.25rem;
   font-size: 1.5rem;
 }
 p {
   margin-top: 1.25rem;
   opacity: 70%;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 2.5rem;
 }
 h3 {
   color: var(--white);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 ul {
-  margin-top: 20px;
-  font-size: 14px;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 li {
@@ -111,14 +111,14 @@ li {
   color: var(--white);
 }
 .price {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
 }
 .sub__price {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 #permonth {
   margin-left: 0.65rem;
@@ -132,7 +132,7 @@ li {
   width: 100%;
   background-color: var(--BrightYellow);
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -147,17 +147,14 @@ li {
 .attribution {
   font-family: var(--ff-montserrat);
   font-weight: 500;
-  font-size: 14px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  font-size: 0.875rem;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
 }
 a {
   text-decoration: none;
   color: var(--Cyan);
 }
-/* #price__per__day {
-
-} */
 
 @media (max-width: 600px) {
   .single__price__component {
@@ -168,9 +165,9 @@ a {
     grid-template-columns: 1fr;
     height: 800px;
     max-width: 350px;
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
   .attribution {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
