@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --clrpick: hsl(179, 45%, 52%);
+  --clrgreen: hsl(179, 55%, 45%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --hoverYellow: hsl(71, 73%, 44%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --ff-karla: "Karla", sans-serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--LightGray);
+  font-family: var(--ff-karla);
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+.single__price__component {
+  display: grid;
+  max-width: 635px;
+  height: 475px;
+  grid-template-areas:
+    "money__back money__back"
+    "subscription whyus";
+  gap: 0;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.money__back {
+  background-color: var(--white);
+  grid-area: money__back;
+}
+
+.subscription {
+  grid-area: subscription;
+  background-color: var(--clrgreen);
+  color: var(--white);
+}
+.whyus {
+  grid-area: whyus;
+  background-color: var(--clrpick);
+}
+
+.whyus,
+.subscription {
+  padding: 30px;
+}
+
+.money__back {
+  padding: 30px;
+}
+
+h1 {
+  color: var(--Cyan);
+  font-family: var(--ff-karla);
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.money__back > h3 {
+  color: var(--BrightYellow);
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+p {
+  margin-top: 1.25rem;
+  opacity: 70%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.5rem;
+}
+h3 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+}
+ul {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+li {
+  color: var(--white);
+  line-height: 1.8rem;
+  font-weight: 400;
+  opacity: 70%;
+}
+.subscription > p {
+  color: var(--white);
+}
+.price {
+  font-size: 30px;
+  font-weight: 700;
+}
+.sub__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+#permonth {
+  margin-left: 0.65rem;
+  font-size: 1.5rem;
+  opacity: 50%;
+}
+
+.signup {
+  color: var(--white);
+  height: 50px;
+  width: 100%;
+  background-color: var(--BrightYellow);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: 10px;
+  cursor: pointer;
+}
+.signup:hover {
+  background-color: var(--hoverYellow);
+  transition: 0.3s ease;
+}
+
+.attribution {
+  font-family: var(--ff-montserrat);
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+a {
+  text-decoration: none;
+  color: var(--Cyan);
+}
+/* #price__per__day {
+
+} */
+
+@media (max-width: 600px) {
+  .single__price__component {
+    grid-template-areas:
+      "money__back"
+      "subscription "
+      "whyus";
+    grid-template-columns: 1fr;
+    height: 800px;
+    max-width: 350px;
+    margin-top: 40px;
+  }
+  .attribution {
+    font-size: 12px;
+  }
+}
